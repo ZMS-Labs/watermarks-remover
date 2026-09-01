@@ -1,3 +1,12 @@
+<!-- ZMS-ESTATE:BEGIN -->
+
+> **Obligation:** `none` · **Stage:** `building` · **Load-bearing:** `unknown — not yet observed`
+> **Purpose:** `mirror_or_packaging`
+> **Canonical for:** none
+> Estate authority: `ZMS-Labs/zms-homelab/governance/estate.yaml`.
+
+<!-- ZMS-ESTATE:END -->
+
 ```
 _ _ _ ____ ___ ____ ____ _  _ ____ ____ _  _ ____    ____ ____ _  _ ____ _  _ ____ ____
 | | | |__|  |  |___ |__/ |\/| |__| |__/ |_/  [__  __ |__/ |___ |\/| |  | |  | |___ |__/
