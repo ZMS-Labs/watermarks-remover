@@ -279,3 +279,23 @@ MIT — see [LICENSE](LICENSE).
 - [google-deepmind/synthid-text](https://github.com/google-deepmind/synthid-text) (research reference; not used for detection here)
 - [aloshdenny/reverse-SynthID](https://github.com/aloshdenny/reverse-SynthID) (research reference)
 - Institute of AI PM, [*AI Content Provenance and Watermarking: The PM's Guide to C2PA and SynthID*](https://www.institutepm.com/knowledge-hub/ai-content-provenance-watermarking) (two-layer industry model: C2PA + imperceptible watermark / soft binding; SB 942 / EU AI Act Art. 50 context)
+
+## Actions tier
+
+- **tier:** D
+- **review_date:** 2026-12-01
+- **Authority:** ZMS Actions operating model (`ZMS-Labs/zms-homelab` `docs/actions/OPERATING-MODEL.md`), Phase 3, operator-attested 2026-09-02.
+
+Tier D means no workflow runs automatically on `push` or `pull_request`. Exactly one
+dispatch-only integrity check remains, `.github/workflows/ci.yml` (`workflow_dispatch` only).
+It runs the repository's existing pytest suite (`tests/`, 33 tests as of 2026-09-01) and proves the fork-carried scripts still pass their own tests. Run it after an operator-reviewed upstream fast-forward; the green run recorded against that commit is the acceptance evidence. It is not a required check.
+
+Dispatch it manually:
+
+```bash
+gh workflow run ci.yml -R ZMS-Labs/watermarks-remover --ref main
+gh run list -R ZMS-Labs/watermarks-remover --workflow ci.yml --limit 1
+```
+
+Reactivating this repository (any change to its `stage` in the estate registry) triggers a
+tier review before automatic CI is restored.

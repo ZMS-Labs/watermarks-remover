@@ -1,13 +1,21 @@
-name: CI
+name: integrity
 
+# Tier D (paused / straight fork): dispatch-only. No push or pull_request
+# triggers by design -- see "Actions tier" in README.md.
 on:
-  push:
-    branches: [main]
-  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  test:
+  gate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
