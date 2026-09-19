@@ -15,6 +15,8 @@ _ _ _ ____ ___ ____ ____ _  _ ____ ____ _  _ ____    ____ ____ _  _ ____ _  _ __
 
 # watermarks-remover
 
+This is the ZMS Labs fork of [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover). Read the [fork guide](ZMS_UPSTREAM.md) for scope, verification, and contribution routing. Badges and release links below refer to upstream.
+
 <!-- logo: figlet -d .figlet -f cybermedium -w 120 "watermarks-remover" -->
 
 [![CI](https://github.com/guillaumemeyer/watermarks-remover/actions/workflows/ci.yml/badge.svg)](https://github.com/guillaumemeyer/watermarks-remover/actions/workflows/ci.yml)
