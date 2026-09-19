@@ -24,3 +24,20 @@ Core scripts use the standard library; the test suite uses pytest. With the test
 Use synthetic fixtures or content you are authorized to process. Preserve originals when evaluating file transformations. A transformation result does not establish legal permission, anonymity, or the absence of every possible provenance signal.
 
 Route upstream product changes to the upstream project. Use this fork's issue tracker for a fork-specific regression, and identify the relevant commit or local difference. Preserve upstream authorship and licensing when updating the fork.
+
+## Visual documentation quality
+
+Apply the [shared visual documentation standard](https://github.com/ZMS-Labs/.github/blob/main/docs/documentation-standard.md#use-visuals-to-explain)
+to all new or changed visual headings, Mermaid diagrams, flowcharts, sequences,
+screenshots, and charts. Verify labels, arrows, grouping, order, and status
+against authoritative source; distinguish conceptual, planned, implemented, and
+observed evidence. Preserve authentic product screenshots and product-local
+design identity. Use generated images only for illustrative explanation, and
+keep exact diagrams editable.
+
+Inspect the rendered destination at desktop and narrow widths, with readable
+labels, a text equivalent, and light/dark presentation where supported. Record
+the source scope, actual semantic and render checks, and remaining limits in the
+change description. Use one bounded review and recheck affected content; this
+standard adds no mandatory independent-model gate. Adoption does not certify
+that historical visuals have been reviewed.
