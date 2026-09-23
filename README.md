@@ -1,9 +1,6 @@
 <!-- ZMS-ESTATE:BEGIN -->
 
-> **Obligation:** `none` · **Stage:** `building` · **Load-bearing:** `unknown — not yet observed`
-> **Purpose:** `mirror_or_packaging`
-> **Canonical for:** none
-> Estate authority: the ZMS fleet governance registry (private), `governance/estate.yaml`.
+Status: Archived.
 
 <!-- ZMS-ESTATE:END -->
 
@@ -15,7 +12,7 @@ _ _ _ ____ ___ ____ ____ _  _ ____ ____ _  _ ____    ____ ____ _  _ ____ _  _ __
 
 # watermarks-remover
 
-This is the ZMS Labs fork of [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover). Read the [fork guide](ZMS_UPSTREAM.md) for scope, verification, and contribution routing. Badges and release links below refer to upstream.
+This is my fork of [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover), a tool that strips AI watermarks from content you own. The tool itself is unchanged, so the code and the text below are upstream's as of v0.3.0, where this fork started. The badges show upstream today, and upstream has the current version. The [fork guide](ZMS_UPSTREAM.md) covers the rest.
 
 <!-- logo: figlet -d .figlet -f cybermedium -w 120 "watermarks-remover" -->
 

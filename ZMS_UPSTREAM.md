@@ -1,43 +1,21 @@
 # Fork guide
 
-This repository is a ZMS Labs fork of [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover). The upstream project supplies the skill and scripts described in the [README](README.md). This guide distinguishes the fork from upstream without changing the upstream license or product claims.
+This is my fork of [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover), archived as a read-only copy of upstream v0.3.0. The skill and scripts come from the upstream project, and its MIT license still applies. The changes here are documentation only.
+
+Use the tool only on files you own or are allowed to process, and keep your originals. A cleaned file doesn't give you legal permission or anonymity, and it can still carry signs of where it came from that the tool doesn't reach. Upstream's [ethics notes](skills/remove-ai-marks/references/ethics.md) list what the tool is and isn't for.
 
 ## Start here
 
-| Task | Guide or source |
+| Task | Where to look |
 |---|---|
-| Understand supported text and file operations | [README](README.md) |
+| See what the tool does with text and files | [README](README.md) |
 | Read the agent skill | [Skill instructions](skills/remove-ai-marks/SKILL.md) |
-| Find verification commands | [Makefile](Makefile) and [tests](tests) |
-| Propose a change | [Contribution guide](CONTRIBUTING.md) |
+| Ask about or change the tool | [The upstream project](https://github.com/guillaumemeyer/watermarks-remover) |
 | Report a potential vulnerability | [Security policy](SECURITY.md) |
-| Check reuse conditions | [MIT license](LICENSE) |
+| Check reuse terms | [MIT license](LICENSE) |
 
-The inherited contribution guide describes upstream maintainers and branch protection; it does not establish this fork's permissions or protection settings.
+Issues are off here, and the badges and release links in the README point to upstream. If the fork is ever updated, upstream's credits and MIT license stay as they are.
 
-Upstream badges, releases, and support links describe upstream. They do not prove that the fork has published an equivalent release or passed the same checks. Inspect this repository's commits and check results for a fork-specific claim.
+## Run the tests
 
-## Verify and contribute
-
-Core scripts use the standard library; the test suite uses pytest. With the test dependencies available, `python -m pytest` runs the repository suite, matching `make test`. The Makefile also defines smoke checks and optional integrations. Optional model or external-tool checks should be run only with the intended configuration and authorization.
-
-Use synthetic fixtures or content you are authorized to process. Preserve originals when evaluating file transformations. A transformation result does not establish legal permission, anonymity, or the absence of every possible provenance signal.
-
-Route upstream product changes to the upstream project. Use this fork's issue tracker for a fork-specific regression, and identify the relevant commit or local difference. Preserve upstream authorship and licensing when updating the fork.
-
-## Visual documentation quality
-
-Apply the [shared visual documentation standard](https://github.com/ZMS-Labs/.github/blob/main/docs/documentation-standard.md#use-visuals-to-explain)
-to all new or changed visual headings, Mermaid diagrams, flowcharts, sequences,
-screenshots, and charts. Verify labels, arrows, grouping, order, and status
-against authoritative source; distinguish conceptual, planned, implemented, and
-observed evidence. Preserve authentic product screenshots and product-local
-design identity. Use generated images only for illustrative explanation, and
-keep exact diagrams editable.
-
-Inspect the rendered destination at desktop and narrow widths, with readable
-labels, a text equivalent, and light/dark presentation where supported. Record
-the source scope, actual semantic and render checks, and remaining limits in the
-change description. Use one bounded review and recheck affected content; this
-standard adds no mandatory independent-model gate. Adoption does not certify
-that historical visuals have been reviewed.
+The core scripts need only Python's standard library. The [tests](tests) use pytest. With it installed, `python -m pytest` runs the suite, the same as `make test` in the [Makefile](Makefile).
